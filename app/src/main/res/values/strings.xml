@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Motion Layout</string>
+    <string name="sessao_hardware_de_pc">Sessão Hardware de PC</string>
+    <string name="gabinete_gamer">Gabinete Gamer</string>
+    <string name="descricao_gabinete_gamer">Descrição Gabinete Gamer</string>
+    <string name="preco">Preço</string>
+</resources>

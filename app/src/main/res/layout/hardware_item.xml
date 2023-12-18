@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="7dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fotoProdutoId"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbarSize="17dp"
+        android:src="@drawable/gabinete"
+        app:layout_constraintBottom_toBottomOf="@id/precoProdutoId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nomeProdutoId" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nomeProdutoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="2"
+        android:text="@string/gabinete_gamer"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoProdutoId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descricaoProdutoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/descricao_gabinete_gamer"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+       app:layout_constraintStart_toStartOf="@id/nomeProdutoId"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProdutoId" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/precoProdutoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/preco"
+        android:textColor="@color/color_green"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/descricaoProdutoId"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoProdutoId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
